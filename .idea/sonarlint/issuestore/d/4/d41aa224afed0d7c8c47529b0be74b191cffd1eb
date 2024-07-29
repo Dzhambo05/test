@@ -1,0 +1,30 @@
+
+x
+java:S1192
+"VDefine a constant instead of duplicating this literal "org.postgresql.Driver" 4 times.(õ†¨Äùÿÿÿÿ8³Êº¢2
+7
+java:S1220""Move this file to a named package.8³Êº¢2
+W
+java:S1118":Add a private constructor to hide the implicit public one.(¤ŒÊ8³Êº¢2
+O
+java:S4925
+"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8³Êº¢2
+P
+java:S1481".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8ÃÊº¢2
+G	java:S106"+Replace this use of System.out by a logger.(ŸÓÊ«8ÃÊº¢2
+L	java:S106"+Replace this use of System.out by a logger.(…©ø‡şÿÿÿÿ8ÃÊº¢2
+O
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8ÃÊº¢2
+P
+java:S1481!".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8ÃÊº¢2
+G	java:S106""+Replace this use of System.out by a logger.(î˜ğÈ8ÃÊº¢2
+L	java:S106,"+Replace this use of System.out by a logger.(÷ƒ³®ÿÿÿÿÿ8ÃÊº¢2
+O
+java:S49251"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8ÃÊº¢2
+P
+java:S14813".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8ÃÊº¢2
+F	java:S106;"+Replace this use of System.out by a logger.(®¥Š8ÃÊº¢2
+O
+java:S4925@"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8ÃÊº¢2
+L	java:S106G"+Replace this use of System.out by a logger.(©è¬àıÿÿÿÿ8ÃÊº¢2
+L	java:S106K"+Replace this use of System.out by a logger.(òÓÒüÿÿÿÿ8÷é°Ë2

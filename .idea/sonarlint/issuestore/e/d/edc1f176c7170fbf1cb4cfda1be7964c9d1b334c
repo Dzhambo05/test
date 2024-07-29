@@ -1,0 +1,43 @@
+
+x
+java:S1192"VDefine a constant instead of duplicating this literal "org.postgresql.Driver" 4 times.(õ†¨Äùÿÿÿÿ8ØË2
+7
+java:S1220""Move this file to a named package.8ØË2
+i
+java:S2095&"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ë«Æşûÿÿÿÿ8Óˆ¾Î2
+q
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öÚ¥ùÿÿÿÿ8ò ¶Î2
+i
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ë«Æşûÿÿÿÿ8ò ¶Î2
+q
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öÚ¥ùÿÿÿÿ8ò ¶Î2
+i
+java:S20956"GUse try-with-resources or close this "Statement" in a "finally" clause.(Ë«Æşûÿÿÿÿ8ò ¶Î2
+l
+java:S2095G"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹ûğ8ò ¶Î2
+q
+java:S2095)"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(öÚ¥ùÿÿÿÿ8Óˆ¾Î2
+W
+java:S1118":Add a private constructor to hide the implicit public one.(¡ÏóÀ8çË2
+O
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8çË2
+P
+java:S1481".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8çË2
+G	java:S106"+Replace this use of System.out by a logger.(¢·éÛ8çË2
+L	java:S106"+Replace this use of System.out by a logger.(Åù«Šıÿÿÿÿ8çË2
+L	java:S106"+Replace this use of System.out by a logger.(áò¨úıÿÿÿÿ8çË2
+O
+java:S4925$"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8çË2
+P
+java:S1481&".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8çË2
+L	java:S106."+Replace this use of System.out by a logger.(ñ‹øÿÿÿÿ8çË2
+O
+java:S49253"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8çË2
+P
+java:S14816".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8çË2
+G	java:S1068"+Replace this use of System.out by a logger.(ç«Çƒ8çË2
+G	java:S106@"+Replace this use of System.out by a logger.(Ïä’Ø8çË2
+O
+java:S4925E"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8çË2
+L	java:S106L"+Replace this use of System.out by a logger.(¦àÔÛøÿÿÿÿ8çË2
+G	java:S106P"+Replace this use of System.out by a logger.(Ì¡“8Á½Î2

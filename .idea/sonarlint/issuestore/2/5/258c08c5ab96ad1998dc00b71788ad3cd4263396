@@ -1,0 +1,45 @@
+
+x
+java:S1192"VDefine a constant instead of duplicating this literal "org.postgresql.Driver" 4 times.(õ†¨Äùÿÿÿÿ8ˆ‰”Ë2
+7
+java:S1220""Move this file to a named package.8ˆ‰”Ë2
+\
+java:S1118":Add a private constructor to hide the implicit public one.(«»±íşÿÿÿÿ8ÿ‹”Ë2
+O
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8ÿ‹”Ë2
+P
+java:S1481".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8ÿ‹”Ë2
+L	java:S106"+Replace this use of System.out by a logger.(É¼åşÿÿÿÿ8Œ”Ë2
+L	java:S106"+Replace this use of System.out by a logger.(ë¹“Œÿÿÿÿÿ8Œ”Ë2
+G	java:S106"+Replace this use of System.out by a logger.(†òóÜ8Œ”Ë2
+G	java:S106"+Replace this use of System.out by a logger.(µÙ8Œ”Ë2
+[
+java:S2130 "9Use "Integer.parseInt" for this string-to-int conversion.(›Ú¤Ùıÿÿÿÿ8Œ”Ë2
+L	java:S106!"+Replace this use of System.out by a logger.(Æ’§˜şÿÿÿÿ8Œ”Ë2
+G	java:S106&"+Replace this use of System.out by a logger.(É¢ˆ»8Œ”Ë2
+L	java:S106'"+Replace this use of System.out by a logger.(Ñ‘Œ‹ıÿÿÿÿ8Œ”Ë2
+L	java:S1061"+Replace this use of System.out by a logger.(µ…‚¶øÿÿÿÿ8Œ”Ë2
+G	java:S106A"+Replace this use of System.out by a logger.(Ó¦8Œ”Ë2
+O
+java:S4925G"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8Œ”Ë2
+L	java:S106P"+Replace this use of System.out by a logger.(°ÿ’üÿÿÿÿ8Œ”Ë2
+O
+java:S4925V"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8Œ”Ë2
+P
+java:S1481Y".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8®Œ”Ë2
+L	java:S106["+Replace this use of System.out by a logger.(É¼åşÿÿÿÿ8½Œ”Ë2
+L	java:S106\"+Replace this use of System.out by a logger.(ë¹“Œÿÿÿÿÿ8½Œ”Ë2
+G	java:S106h"+Replace this use of System.out by a logger.(†òóÜ8½Œ”Ë2
+G	java:S106j"+Replace this use of System.out by a logger.(µÙ8½Œ”Ë2
+[
+java:S2130k"9Use "Integer.parseInt" for this string-to-int conversion.(›Ú¤Ùıÿÿÿÿ8½Œ”Ë2
+L	java:S106l"+Replace this use of System.out by a logger.(Æ’§˜şÿÿÿÿ8½Œ”Ë2
+G	java:S106q"+Replace this use of System.out by a logger.(É¢ˆ»8½Œ”Ë2
+L	java:S106r"+Replace this use of System.out by a logger.(Ñ‘Œ‹ıÿÿÿÿ8½Œ”Ë2
+M	java:S106‰"+Replace this use of System.out by a logger.(¦ÏŞ¸ùÿÿÿÿ8İŒ”Ë2
+P
+java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8İŒ”Ë2
+Q
+java:S1481‘".Remove this unused "statement" local variable.(Ë«Æşûÿÿÿÿ8İŒ”Ë2
+M	java:S106—"+Replace this use of System.out by a logger.(ôòÕãøÿÿÿÿ8İŒ”Ë2
+H	java:S106›"+Replace this use of System.out by a logger.(—âÌÎ8İŒ”Ë2

@@ -1,0 +1,1 @@
+DO $$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_database WHERE datname = 'order_service') THEN EXECUTE 'CREATE DATABASE order_service'; END IF; END $$;
