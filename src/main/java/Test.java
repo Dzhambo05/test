@@ -1,6 +1,8 @@
+import ru.test.entities.Courier;
 import ru.test.entities.Person;
 import ru.test.hibernate.HibernateUtil;
 import org.hibernate.Session;
+import ru.test.managers.CourierManager;
 import ru.test.managers.PersonManager;
 
 import java.util.ArrayList;
@@ -18,11 +20,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-        PersonManager personManager = new PersonManager();
-        personManager.init();
-
-        Person person = new Person("@123");
-        personManager.deletePersonByNickname("@0");
+        CourierManager courierManager = new CourierManager();
+        courierManager.init();
 
 
 

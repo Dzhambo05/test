@@ -16,8 +16,37 @@ public class Courier {
     private UUID id;
     @Column(name="name")
     private String name;
-    @Column(name="phone_number")
+    @Column(name="phone_number", unique = true)
     private String phoneNumber;
+
+    public Courier() {
+    }
+
+    public Courier(String name, String phoneNumber) {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
     /*static String path = Test.url + Test.dbName;
 
     public static void addCourier() {
