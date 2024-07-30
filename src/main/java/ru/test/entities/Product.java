@@ -2,19 +2,16 @@ package ru.test.entities;
 
 import jakarta.persistence.*;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.sql.*;
 import java.util.UUID;
 
 @Entity
 @Table(name = "products")
-public class Products {
+public class Product {
 
     @Id
     @GeneratedValue
     private UUID id;
-    @Column(name = "name")
+    @Column(name = "name", unique = true)
     private String name;
     @Column(name = "price")
     private int price;
@@ -26,6 +23,59 @@ public class Products {
     private float weight;
     @Column(name = "category")
     private String category;
+
+    public UUID getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getCompound() {
+        return compound;
+    }
+
+    public void setCompound(String compound) {
+        this.compound = compound;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     /*static String path = Test.url + Test.dbName;
     public static void addProduct() {
         try {

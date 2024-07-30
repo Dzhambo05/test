@@ -12,6 +12,6 @@
         <mapping class="ru.test.entities.Person" />
         <mapping class="ru.test.entities.Order" />
         <mapping class="ru.test.entities.Courier" />
-        <mapping class="ru.test.entities.Products" />
+        <mapping class="ru.test.entities.Product" />
     </session-factory>
 </hibernate-configuration>
