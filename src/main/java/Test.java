@@ -1,10 +1,12 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.sql.*;
+import ru.test.entities.Person;
+import ru.test.hibernate.HibernateUtil;
+import org.hibernate.Session;
+import ru.test.managers.PersonManager;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.UUID;
 
 public class Test {
     static List<String> columns = new ArrayList<>();
@@ -16,7 +18,16 @@ public class Test {
 
     public static void main(String[] args) {
 
-        try {
+        PersonManager personManager = new PersonManager();
+        personManager.init();
+
+        Person person = new Person("@123");
+        personManager.deletePersonByNickname("@0");
+
+
+
+
+        /*try {
             System.out.println("Здравствуйте! Выберите таблицу куда хотите добавить данные: ");
             Class.forName("org.postgresql.Driver");
 
@@ -84,21 +95,21 @@ public class Test {
                     String s = reader.readLine();
                     switch (s) {
                         case ("1") :
-                            Courier.addCourier();
+                            ru.test.entities.Courier.addCourier();
                             break;
                         case ("2") :
                             System.out.println("Введите имя");;
-                            Courier.deleteCourier(reader.readLine());
+                            ru.test.entities.Courier.deleteCourier(reader.readLine());
                             break;
                         case ("3") :
                             System.out.println("Введите имя");
                             String s1 = reader.readLine();
-                            Courier.updateCourier(s1);
+                            ru.test.entities.Courier.updateCourier(s1);
                             break;
                         case ("4") :
                             System.out.println("Кого вывести?");
                             String name = reader.readLine();
-                            Courier.showCourier(name);
+                            ru.test.entities.Courier.showCourier(name);
                             break;
                     }
                     break;
@@ -112,19 +123,19 @@ public class Test {
                     String o = reader.readLine();
                     switch (o) {
                         case ("1") :
-                            Products.addProduct();
+                            ru.test.entities.Products.addProduct();
                             break;
                         case ("2") :
                             System.out.println("Введтите название товара: ");
-                            Products.deleteProduct(reader.readLine());
+                            ru.test.entities.Products.deleteProduct(reader.readLine());
                             break;
                         case ("3") :
                             System.out.println("Введите название товара: ");
-                            Products.updateProduct(reader.readLine());
+                            ru.test.entities.Products.updateProduct(reader.readLine());
                             break;
                         case ("4") :
                             System.out.println("Введите название товара: ");
-                            Products.showProduct(reader.readLine());
+                            ru.test.entities.Products.showProduct(reader.readLine());
                             break;
                     }
                     break;
@@ -138,19 +149,19 @@ public class Test {
                     String q = reader.readLine();
                     switch (q) {
                         case ("1") :
-                            Person.addPerson();
+                            ru.test.entities.Person.addPerson();
                             break;
                         case ("2") :
                             System.out.println("Введтите никнэйм человека: ");
-                            Person.deletePerson(reader.readLine());
+                            ru.test.entities.Person.deletePerson(reader.readLine());
                             break;
                         case ("3") :
                             System.out.println("Введтите никнэйм человека: ");
-                            Person.updatePerson(reader.readLine());
+                            ru.test.entities.Person.updatePerson(reader.readLine());
                             break;
                         case ("4") :
                             System.out.println("Введтите никнэйм человека: ");
-                            Person.showPerson(reader.readLine());
+                            ru.test.entities.Person.showPerson(reader.readLine());
                             break;
                     }
                     break;
@@ -164,19 +175,19 @@ public class Test {
                     String w = reader.readLine();
                     switch (w) {
                         case ("1") :
-                            Order.addOrder();
+                            ru.test.entities.Order.addOrder();
                             break;
                         case ("2") :
                             System.out.println("Введтите адрес заказа: ");
-                            Order.deleteOrder(reader.readLine());
+                            ru.test.entities.Order.deleteOrder(reader.readLine());
                             break;
                         case ("3") :
                             System.out.println("Введтите адрес заказа: ");
-                            Order.updateOrder(reader.readLine());
+                            ru.test.entities.Order.updateOrder(reader.readLine());
                             break;
                         case ("4") :
                             System.out.println("Введтите адрес заказа: ");
-                            Order.showOrder(reader.readLine());
+                            ru.test.entities.Order.showOrder(reader.readLine());
                             break;
                     }
             }
@@ -185,6 +196,6 @@ public class Test {
 
         } catch (Exception ignore) {
             System.out.println("Что-то пошло не так");
-        }
+        }*/
     }
 }

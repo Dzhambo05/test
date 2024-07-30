@@ -1,0 +1,19 @@
+
+Q
+java:S3740*"/Provide the parametrized type for this generic.(¶¢Ë‘üÿÿÿÿ8æ§à¢2
+Q
+java:S3740@"/Provide the parametrized type for this generic.(¶¢Ë‘üÿÿÿÿ8æ§à¢2
+K
+java:S1121B".Extract the assignment out of this expression.(•Ô­ü8æ§à¢2
+L	java:S106#"+Replace this use of System.out by a logger.(…©ø‡şÿÿÿÿ8…¨à¢2
+U
+java:S1874*"3Remove this use of "createQuery"; it is deprecated.(¶¢Ë‘üÿÿÿÿ8…¨à¢2
+F	java:S1062"+Replace this use of System.out by a logger.(®¥Š8…¨à¢2
+K
+java:S19059")Remove this unnecessary cast to "Person".(Û—Çæıÿÿÿÿ8…¨à¢2
+M
+java:S1481>"+Remove this unused "person" local variable.(èÎûıøÿÿÿÿ8…¨à¢2
+U
+java:S1874@"3Remove this use of "createQuery"; it is deprecated.(¶¢Ë‘üÿÿÿÿ8…¨à¢2
+M
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8…¨à¢2

@@ -1,108 +1,28 @@
 
-
-java:S1192ª"kDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ñ‚Ğ¸Ñ‚Ğµ Ğ°Ğ´Ñ€ĞµÑ Ğ·Ğ°ĞºĞ°Ğ·Ğ°: " 3 times.(ÄÄ‰ûşÿÿÿÿ8¡‰ÚÎ2
-‘
-java:S1192"sDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ñ‚Ğ¸Ñ‚Ğµ Ğ½Ğ¸ĞºĞ½ÑĞ¹Ğ¼ Ñ‡ĞµĞ»Ğ¾Ğ²ĞµĞºĞ°: " 3 times.(‡ÌüÃ8Šİ¬Ê2
-
-java:S1192N"dDefine a constant instead of duplicating this literal "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ: " 4 times.(×ã¬•8Šİ¬Ê2
-w
-java:S1192Q"ZDefine a constant instead of duplicating this literal "3) Ğ ĞµĞ´Ğ°ĞºÑ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°" 4 times.(ˆ­¸Î8Šİ¬Ê2
-t
-java:S1192P"RDefine a constant instead of duplicating this literal "2) Ğ£Ğ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ" 4 times.(µÑ°Îøÿÿÿÿ8Šİ¬Ê2
-v
-java:S1192R"TDefine a constant instead of duplicating this literal "4) ĞŸĞ¾ĞºĞ°Ğ·Ğ°Ñ‚ÑŒ" 4 times.(Øêê÷ıÿÿÿÿ8Šİ¬Ê2
-q
-java:S1192O"TDefine a constant instead of duplicating this literal "1) Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ¸Ñ‚ÑŒ" 4 times.(¡Ùàã8Šİ¬Ê2
 l
-java:S1104"OMake url a static final constant or non-public and provide accessors if needed.(âİÓÔ8Šİ¬Ê2
+java:S1104"OMake url a static final constant or non-public and provide accessors if needed.(âİÓÔ8àÚ¢2
 t
-java:S1104"RMake dbName a static final constant or non-public and provide accessors if needed.(ÎêŒ•úÿÿÿÿ8Šİ¬Ê2
+java:S1104"RMake dbName a static final constant or non-public and provide accessors if needed.(ÎêŒ•úÿÿÿÿ8àÚ¢2
 {
-java:S1104"YMake authorization a static final constant or non-public and provide accessors if needed.(’­Õ²üÿÿÿÿ8Šİ¬Ê2
+java:S1104"YMake authorization a static final constant or non-public and provide accessors if needed.(’­Õ²üÿÿÿÿ8àÚ¢2
 F
-java:S1444")Make this "public static url" field final(âİÓÔ8Šİ¬Ê2
+java:S1444")Make this "public static url" field final(âİÓÔ8àÚ¢2
 N
-java:S1444",Make this "public static dbName" field final(ÎêŒ•úÿÿÿÿ8Šİ¬Ê2
+java:S1444",Make this "public static dbName" field final(ÎêŒ•úÿÿÿÿ8àÚ¢2
 U
-java:S1444"3Make this "public static authorization" field final(’­Õ²üÿÿÿÿ8Šİ¬Ê2
+java:S1444"3Make this "public static authorization" field final(’­Õ²üÿÿÿÿ8àÚ¢2
 7
-java:S1220""Move this file to a named package.8™İ¬Ê2
-i
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(é°Áµşÿÿÿÿ8Õ”ÙÎ2
-i
-java:S2095*"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ8Õ”ÙÎ2
-j
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ğì½ˆüÿÿÿÿ8Õ”ÙÎ2
-n
-java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(¨›¤ıÿÿÿÿ8Õ”ÙÎ2
-j
-java:S2095)"HUse try-with-resources or close this "Connection" in a "finally" clause.( €é¼ùÿÿÿÿ8Õ”ÙÎ2
-i
-java:S2095+"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(µÃ‹è8Õ”ÙÎ2
+java:S1220""Move this file to a named package.8àÚ¢2
 ?
-java:S2386"Make this member "protected".(’­Õ²üÿÿÿÿ8¦Ş¬Ê2
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Çµí‘8¦Ş¬Ê2
+java:S2386"Make this member "protected".(’­Õ²üÿÿÿÿ8àÚ¢2
+W
+java:S1854":Remove this useless assignment to local variable "person".(¸Šú8†Ô¢2
+H
+java:S1481"+Remove this unused "person" local variable.(¸Šú8†Ô¢2
+X	java:S125"<This block of commented-out lines of code should be removed.(½‘Ñ³8àÚ¢2
+^
+java:S1128"<Remove this unused import 'ru.test.hibernate.HibernateUtil'.(ÿ†Øéÿÿÿÿÿ8š²Ø¢2
 T
-java:S1854#"7Remove this useless assignment to local variable "set".(¿Ñ¾É8¦Ş¬Ê2
-T
-java:S1854/"7Remove this useless assignment to local variable "set".(¿Ñ¾É8¦Ş¬Ê2
-X
-java:S18543"6Remove this useless assignment to local variable "rs".(Ğ¬ÜÇûÿÿÿÿ8¦Ş¬Ê2
-L	java:S106"+Replace this use of System.out by a logger.(Ã›§‘üÿÿÿÿ8¦Ş¬Ê2
-O
-java:S4925"-Remove this "Class.forName()", it is useless.(õ†¨Äùÿÿÿÿ8¦Ş¬Ê2
-]	java:S125""<This block of commented-out lines of code should be removed.(ğ³ÎÅüÿÿÿÿ8¶Ş¬Ê2
-E
-java:S1481#"(Remove this unused "set" local variable.(¿Ñ¾É8¶Ş¬Ê2
-]	java:S125."<This block of commented-out lines of code should be removed.(ğ³ÎÅüÿÿÿÿ8¶Ş¬Ê2
-E
-java:S1481/"(Remove this unused "set" local variable.(¿Ñ¾É8¶Ş¬Ê2
-I
-java:S14813"'Remove this unused "rs" local variable.(Ğ¬ÜÇûÿÿÿÿ8¶Ş¬Ê2
-G	java:S106<"+Replace this use of System.out by a logger.(›»öÈ8¶Ş¬Ê2
-G	java:S106B"+Replace this use of System.out by a logger.(Ù ·›8¶Ş¬Ê2
-L	java:S106E"+Replace this use of System.out by a logger.(Ÿ±øûÿÿÿÿ8¶Ş¬Ê2
-L	java:S106I"+Replace this use of System.out by a logger.(ÀÔ ³şÿÿÿÿ8¶Ş¬Ê2
-C	java:S131L""Add a default case to this switch.(İõô£ùÿÿÿÿ8¶Ş¬Ê2
-G	java:S106N"+Replace this use of System.out by a logger.(×ã¬•8¶Ş¬Ê2
-G	java:S106O"+Replace this use of System.out by a logger.(¡Ùàã8¶Ş¬Ê2
-L	java:S106P"+Replace this use of System.out by a logger.(µÑ°Îøÿÿÿÿ8¶Ş¬Ê2
-G	java:S106Q"+Replace this use of System.out by a logger.(ˆ­¸Î8¶Ş¬Ê2
-L	java:S106R"+Replace this use of System.out by a logger.(Øêê÷ıÿÿÿÿ8¶Ş¬Ê2
-C	java:S131U""Add a default case to this switch.(Ô´ØÕıÿÿÿÿ8¶Ş¬Ê2
-G	java:S106Z"+Replace this use of System.out by a logger.(Çö™İ8¶Ş¬Ê2
-9
-java:S1116Z"Remove this empty statement.(Çö™İ8¶Ş¬Ê2
-G	java:S106^"+Replace this use of System.out by a logger.(å”ª8¶Ş¬Ê2
-L	java:S106c"+Replace this use of System.out by a logger.(­ìÌãıÿÿÿÿ8¶Ş¬Ê2
-G	java:S106j"+Replace this use of System.out by a logger.(×ã¬•8¶Ş¬Ê2
-G	java:S106k"+Replace this use of System.out by a logger.(¡Ùàã8¶Ş¬Ê2
-L	java:S106l"+Replace this use of System.out by a logger.(µÑ°Îøÿÿÿÿ8¶Ş¬Ê2
-G	java:S106m"+Replace this use of System.out by a logger.(ˆ­¸Î8¶Ş¬Ê2
-L	java:S106n"+Replace this use of System.out by a logger.(Øêê÷ıÿÿÿÿ8¶Ş¬Ê2
-C	java:S131q""Add a default case to this switch.(¤ÁŞÂÿÿÿÿÿ8ÅŞ¬Ê2
-L	java:S106v"+Replace this use of System.out by a logger.(Èæõûÿÿÿÿ8ÅŞ¬Ê2
-L	java:S106z"+Replace this use of System.out by a logger.(›‚ÉŠúÿÿÿÿ8ÅŞ¬Ê2
-L	java:S106~"+Replace this use of System.out by a logger.(›‚ÉŠúÿÿÿÿ8ÅŞ¬Ê2
-H	java:S106„"+Replace this use of System.out by a logger.(×ã¬•8ÅŞ¬Ê2
-H	java:S106…"+Replace this use of System.out by a logger.(¡Ùàã8ÅŞ¬Ê2
-M	java:S106†"+Replace this use of System.out by a logger.(µÑ°Îøÿÿÿÿ8ÅŞ¬Ê2
-H	java:S106‡"+Replace this use of System.out by a logger.(ˆ­¸Î8ÅŞ¬Ê2
-M	java:S106ˆ"+Replace this use of System.out by a logger.(Øêê÷ıÿÿÿÿ8ÅŞ¬Ê2
->	java:S131‹""Add a default case to this switch.(çÛ¼d8ÅŞ¬Ê2
-H	java:S106"+Replace this use of System.out by a logger.(‡ÌüÃ8ÅŞ¬Ê2
-H	java:S106”"+Replace this use of System.out by a logger.(‡ÌüÃ8ÅŞ¬Ê2
-H	java:S106˜"+Replace this use of System.out by a logger.(‡ÌüÃ8ÅŞ¬Ê2
-H	java:S106"+Replace this use of System.out by a logger.(×ã¬•8ÅŞ¬Ê2
-H	java:S106Ÿ"+Replace this use of System.out by a logger.(¡Ùàã8ÅŞ¬Ê2
-M	java:S106 "+Replace this use of System.out by a logger.(µÑ°Îøÿÿÿÿ8ÅŞ¬Ê2
-H	java:S106¡"+Replace this use of System.out by a logger.(ˆ­¸Î8ÅŞ¬Ê2
-M	java:S106¢"+Replace this use of System.out by a logger.(Øêê÷ıÿÿÿÿ8ÅŞ¬Ê2
-?	java:S131¥""Add a default case to this switch.(Š†¸³8ÅŞ¬Ê2
-M	java:S106ª"+Replace this use of System.out by a logger.(ÄÄ‰ûşÿÿÿÿ8ÅŞ¬Ê2
-M	java:S106®"+Replace this use of System.out by a logger.(ÄÄ‰ûşÿÿÿÿ8ÅŞ¬Ê2
-M	java:S106²"+Replace this use of System.out by a logger.(ÄÄ‰ûşÿÿÿÿ8ÅŞ¬Ê2
-M	java:S106»"+Replace this use of System.out by a logger.(Ú„²èÿÿÿÿÿ8ÅŞ¬Ê2
-ä
-java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 154 to 64, Complexity from 27 to 14, Nesting Level from 3 to 2, Number of Variables from 19 to 6.(Çµí‘8ÅŞ¬Ê2
+java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8š²Ø¢2
+M
+java:S1128	"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8š²Ø¢2

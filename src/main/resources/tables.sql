@@ -1,4 +1,4 @@
-CREATE TABLE if not exists person (id uuid DEFAULT gen_random_uuid() PRIMARY KEY, telegram_nickname varchar not null check ( telegram_nickname like '@%'));
+CREATE TABLE if not exists persons (id uuid DEFAULT gen_random_uuid() PRIMARY KEY, telegram_nickname varchar not null check ( telegram_nickname like '@%'));
 CREATE TABLE if not exists products (id uuid DEFAULT gen_random_uuid() PRIMARY KEY, name varchar not null, price int not null , description varchar, compound varchar, weight float, category varchar);
-CREATE TABLE if not exists courier (id uuid DEFAULT gen_random_uuid() PRIMARY KEY, name varchar, phone_number varchar);
+CREATE TABLE if not exists couriers (id uuid DEFAULT gen_random_uuid() PRIMARY KEY, name varchar, phone_number varchar);
 CREATE TABLE if not exists orders (id uuid DEFAULT gen_random_uuid() PRIMARY KEY, time TIMESTAMP, status varchar, dishes varchar, total_price int, is_paid boolean, payment_form varchar, address varchar);
