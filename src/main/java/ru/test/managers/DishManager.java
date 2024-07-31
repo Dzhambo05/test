@@ -66,7 +66,7 @@ public class DishManager {
             Transaction transaction = session.beginTransaction();
             System.out.println("Введите новую цену: ");
             dish.setPrice(Integer.parseInt(reader.readLine()));
-            session.update(dish);
+            session.merge(dish);
             transaction.commit();
             return true;
         } catch (Exception e) {

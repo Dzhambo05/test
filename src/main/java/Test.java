@@ -16,12 +16,15 @@ public class Test {
 
 
     public static void main(String[] args) {
+        Person person = new Person();
+        PersonManager personManager = new PersonManager();
+        personManager.init();
+        personManager.addPerson(person);
 
-
-
-
-
-
+        OrderManager orderManager = new OrderManager();
+        orderManager.init();
+        Order order = new Order("asd", "qwe", 555, true, "cart", "DDDD", person);
+        orderManager.updateOrderByAddress("DDDD");
         /*try {
             System.out.println("Здравствуйте! Выберите таблицу куда хотите добавить данные: ");
             Class.forName("org.postgresql.Driver");

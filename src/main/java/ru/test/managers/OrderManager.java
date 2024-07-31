@@ -43,7 +43,7 @@ public class OrderManager {
     public boolean deleteOrderByAddress(String address) {
         Order order;
         try(Session session = sessionFactory.openSession()) {
-            Query query = session.createQuery("from Order where address =:address", Order.class);
+            Query query = session.createQuery("from Order where address = :address", Order.class);
             query.setParameter("address", address);
             order = (Order) query.getSingleResult();
             Transaction transaction = session.beginTransaction();
@@ -66,7 +66,7 @@ public class OrderManager {
             Transaction transaction = session.beginTransaction();
             System.out.println("Ведите новую цену: ");
             order.setTotalPrice(Integer.parseInt(reader.readLine()));
-            session.update(order);
+            session.merge(order);
             transaction.commit();
             return true;
         } catch (Exception e) {

@@ -67,7 +67,7 @@ public class PersonManager {
             Transaction transaction = session.beginTransaction();
             System.out.println("Введите новый никнэйм: ");
             person.setTelegramNickname(reader.readLine());
-            session.update(person);
+            session.merge(person);
             transaction.commit();
             return true;
         }catch (Exception e) {

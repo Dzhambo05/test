@@ -66,7 +66,7 @@ public class CourierManager {
             Transaction transaction = session.beginTransaction();
             System.out.println("Внесите новое имя: ");
             courier.setName(reader.readLine());
-            session.update(courier);
+            session.merge(courier);
             transaction.commit();
             return true;
         } catch (Exception e) {
