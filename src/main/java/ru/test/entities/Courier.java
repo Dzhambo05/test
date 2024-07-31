@@ -8,7 +8,7 @@ import java.sql.*;
 import java.util.UUID;
 
 @Entity
-@Table(name="courier")
+@Table(name="couriers")
 public class Courier {
 
     @Id

@@ -30,7 +30,88 @@ public class Order {
     private String paymentForm;
     @Column(name = "address")
     private String address;
+    @ManyToOne
+    @JoinColumn(name = "person_id", nullable = true)
+    private Person person;
+    @OneToOne
+    @JoinColumn(name = "courier_id", nullable = true)
+    private Courier courier;
 
+
+
+    public Order() {
+    }
+
+    public Order(String status, String dishes, int totalPrice, boolean isPaid, String paymentForm, String address, Person person) {
+        this.time = Timestamp.valueOf(LocalDateTime.now());
+        this.status = status;
+        this.dishes = dishes;
+        this.totalPrice = totalPrice;
+        this.isPaid = isPaid;
+        this.paymentForm = paymentForm;
+        this.address = address;
+        this.person = person;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public Timestamp getTime() {
+        return time;
+    }
+
+    public void setTime(Timestamp time) {
+        this.time = time;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getDishes() {
+        return dishes;
+    }
+
+    public void setDishes(String dishes) {
+        this.dishes = dishes;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(int totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public boolean isPaid() {
+        return isPaid;
+    }
+
+    public void setPaid(boolean paid) {
+        isPaid = paid;
+    }
+
+    public String getPaymentForm() {
+        return paymentForm;
+    }
+
+    public void setPaymentForm(String paymentForm) {
+        this.paymentForm = paymentForm;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
     /*static String path = Test.url + Test.dbName;
 
     public static void addOrder () {

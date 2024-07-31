@@ -1,14 +1,11 @@
-import ru.test.entities.Courier;
+import ru.test.entities.Order;
 import ru.test.entities.Person;
-import ru.test.hibernate.HibernateUtil;
-import org.hibernate.Session;
-import ru.test.managers.CourierManager;
+import ru.test.managers.OrderManager;
 import ru.test.managers.PersonManager;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import java.util.UUID;
 
 public class Test {
     static List<String> columns = new ArrayList<>();
@@ -20,10 +17,9 @@ public class Test {
 
     public static void main(String[] args) {
 
-        PersonManager personManager = new PersonManager();
-        personManager.init();
-        Person person = personManager.getPersonByNickname("@IIIIP");
-        System.out.println(person.getId());
+
+
+
 
 
         /*try {

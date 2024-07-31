@@ -23,6 +23,9 @@ public class PersonManager {
         try (Session session = sessionFactory.openSession()){
             Query<Person> query = session.createQuery("from Person", Person.class);
             return query.list();
+        } catch (Exception e) {
+            System.out.println("Get all persons failed");
+            return null;
         }
     }
 

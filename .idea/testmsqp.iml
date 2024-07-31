@@ -50,6 +50,7 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: com.sun.istack:istack-commons-runtime:4.1.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: jakarta.inject:jakarta.inject-api:2.0.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.antlr:antlr4-runtime:4.13.0" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.13" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="89595820-92b5-4812-8072-e59b853cc6b0" />

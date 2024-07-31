@@ -22,6 +22,9 @@ public class CourierManager {
         try (Session session = sessionFactory.openSession()){
             Query<Courier> query = session.createQuery("from Courier ", Courier.class);
             return query.list();
+        } catch (Exception e) {
+            System.out.println("Get all couriers failed");
+            return null;
         }
     }
 
