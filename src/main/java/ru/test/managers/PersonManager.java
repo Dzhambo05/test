@@ -1,14 +1,15 @@
 package ru.test.managers;
 
-import org.hibernate.Transaction;
-import ru.test.entities.Person;
-import ru.test.hibernate.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.query.Query;
+import ru.test.entities.Person;
+import ru.test.hibernate.HibernateUtil;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.List;
-import java.util.UUID;
 
 public class PersonManager {
 
@@ -52,9 +53,23 @@ public class PersonManager {
         }
     }
 
-    public void updatePerson(Person person) {
-        try (Session session = sessionFactory.openSession()){
-            person = (Person) session.find(Person.class, person.getId());
+    public boolean updatePersonByNickname(String nickname) {
+        Person person;
+        try (Session session = sessionFactory.openSession();
+             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
+            Query query = session.createQuery("from Person where telegramNickname = :telegram_nickname");
+            query.setParameter("telegram_nickname", nickname);
+
+            person = (Person) query.getSingleResult();
+            Transaction transaction = session.beginTransaction();
+            System.out.println("Введите новый никнэйм: ");
+            person.setTelegramNickname(reader.readLine());
+            session.update(person);
+            transaction.commit();
+            return true;
+        }catch (Exception e) {
+            System.out.println("Update person failed");
+            return false;
         }
     }
 

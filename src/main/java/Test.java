@@ -20,10 +20,10 @@ public class Test {
 
     public static void main(String[] args) {
 
-        CourierManager courierManager = new CourierManager();
-        courierManager.init();
-
-
+        PersonManager personManager = new PersonManager();
+        personManager.init();
+        Person person = personManager.getPersonByNickname("@IIIIP");
+        System.out.println(person.getId());
 
 
         /*try {
