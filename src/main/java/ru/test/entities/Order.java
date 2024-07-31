@@ -20,16 +20,16 @@ public class Order {
     @Column(name = "time")
     private Timestamp time;
     @Column(name = "status")
-    private String status;
+    private Status status;
     @OneToMany
-  //  @Column(name = "dishes")
+    //@Column(name = "dishes")
     private List<Dish> dishes;
     @Column(name = "total_price")
     private int totalPrice;
     @Column(name = "is_paid")
     private boolean isPaid;
     @Column(name = "payment_form")
-    private String paymentForm;
+    private Form paymentForm;
     @Column(name = "address")
     private String address;
     @ManyToOne
@@ -44,7 +44,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(String status, List<Dish> dishes, int totalPrice, boolean isPaid, String paymentForm, String address, Person person) {
+    public Order(Status status, List<Dish> dishes, int totalPrice, boolean isPaid, Form paymentForm, String address, Person person) {
         this.time = Timestamp.valueOf(LocalDateTime.now());
         this.status = status;
         this.dishes = dishes;
@@ -67,11 +67,11 @@ public class Order {
         this.time = time;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
@@ -99,11 +99,11 @@ public class Order {
         isPaid = paid;
     }
 
-    public String getPaymentForm() {
+    public Form getPaymentForm() {
         return paymentForm;
     }
 
-    public void setPaymentForm(String paymentForm) {
+    public void setPaymentForm(Form paymentForm) {
         this.paymentForm = paymentForm;
     }
 

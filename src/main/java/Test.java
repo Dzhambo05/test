@@ -1,6 +1,4 @@
-import ru.test.entities.Dish;
-import ru.test.entities.Order;
-import ru.test.entities.Person;
+import ru.test.entities.*;
 import ru.test.managers.DishManager;
 import ru.test.managers.OrderManager;
 import ru.test.managers.PersonManager;
@@ -25,19 +23,22 @@ public class Test {
 
         Dish carrot = new Dish();
         Dish asd = new Dish();
+        Dish dsa = new Dish();
         DishManager dishManager = new DishManager();
         dishManager.init();
         dishManager.addDish(carrot);
         dishManager.addDish(asd);
+        dishManager.addDish(dsa);
         List<Dish> dishes = new ArrayList<>();
         dishes.add(carrot);
         dishes.add(asd);
+        dishes.add(dsa);
 
 
 
         OrderManager orderManager = new OrderManager();
         orderManager.init();
-        Order order = new Order("asd", dishes, 555, true, "cart", "DDDD", person);
+        Order order = new Order(Status.READY, dishes, 555, true, Form.TRANSFER, "DDDD", person);
         orderManager.addOrder(order);
 
 
