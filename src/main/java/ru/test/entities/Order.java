@@ -1,6 +1,7 @@
 package ru.test.entities;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.Formula;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -19,15 +20,18 @@ public class Order {
     private UUID id;
     @Column(name = "time")
     private Timestamp time;
+    @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private Status status;
     @OneToMany
     //@Column(name = "dishes")
     private List<Dish> dishes;
+
     @Column(name = "total_price")
     private int totalPrice;
     @Column(name = "is_paid")
     private boolean isPaid;
+    @Enumerated(EnumType.STRING)
     @Column(name = "payment_form")
     private Form paymentForm;
     @Column(name = "address")
@@ -44,15 +48,17 @@ public class Order {
     public Order() {
     }
 
-    public Order(Status status, List<Dish> dishes, int totalPrice, boolean isPaid, Form paymentForm, String address, Person person) {
+    public Order(Status status, List<Dish> dishes, boolean isPaid, Form paymentForm, String address, Person person) {
         this.time = Timestamp.valueOf(LocalDateTime.now());
         this.status = status;
         this.dishes = dishes;
-        this.totalPrice = totalPrice;
         this.isPaid = isPaid;
         this.paymentForm = paymentForm;
         this.address = address;
         this.person = person;
+        for (Dish d : dishes) {
+            totalPrice += d.getPrice();
+        }
     }
 
     public UUID getId() {
@@ -82,7 +88,6 @@ public class Order {
     public void setDishes(List<Dish> dishes) {
         this.dishes = dishes;
     }
-
     public int getTotalPrice() {
         return totalPrice;
     }

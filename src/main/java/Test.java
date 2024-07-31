@@ -26,6 +26,9 @@ public class Test {
         Dish dsa = new Dish();
         DishManager dishManager = new DishManager();
         dishManager.init();
+        dsa.setPrice(100);
+        asd.setPrice(100);
+        carrot.setPrice(100);
         dishManager.addDish(carrot);
         dishManager.addDish(asd);
         dishManager.addDish(dsa);
@@ -38,8 +41,11 @@ public class Test {
 
         OrderManager orderManager = new OrderManager();
         orderManager.init();
-        Order order = new Order(Status.READY, dishes, 555, true, Form.TRANSFER, "DDDD", person);
+        Order order = new Order(Status.READY, dishes, true, Form.TRANSFER, "D", person);
         orderManager.addOrder(order);
+
+        Order order1 = orderManager.getOrderByAddress("D");
+        System.out.println(order1.getTotalPrice());
 
 
 
