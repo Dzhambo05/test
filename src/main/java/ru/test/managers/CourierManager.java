@@ -78,7 +78,7 @@ public class CourierManager {
     public Courier getCourierByPhoneNumber (String phoneNumber) {
         Courier courier;
         try (Session session = sessionFactory.openSession()){
-            Query query = session.createQuery("from  Courier  where phoneNumber = :phone_number");
+            Query query = session.createQuery("from  Courier  where phoneNumber = :phone_number", Courier.class);
             query.setParameter("phone_number", phoneNumber);
             return courier = (Courier) query.getSingleResult();
         }

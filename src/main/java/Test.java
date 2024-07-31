@@ -1,5 +1,7 @@
+import ru.test.entities.Dish;
 import ru.test.entities.Order;
 import ru.test.entities.Person;
+import ru.test.managers.DishManager;
 import ru.test.managers.OrderManager;
 import ru.test.managers.PersonManager;
 
@@ -21,10 +23,29 @@ public class Test {
         personManager.init();
         personManager.addPerson(person);
 
+        Dish carrot = new Dish();
+        Dish asd = new Dish();
+        DishManager dishManager = new DishManager();
+        dishManager.init();
+        dishManager.addDish(carrot);
+        dishManager.addDish(asd);
+        List<Dish> dishes = new ArrayList<>();
+        dishes.add(carrot);
+        dishes.add(asd);
+
+
+
         OrderManager orderManager = new OrderManager();
         orderManager.init();
-        Order order = new Order("asd", "qwe", 555, true, "cart", "DDDD", person);
-        orderManager.updateOrderByAddress("DDDD");
+        Order order = new Order("asd", dishes, 555, true, "cart", "DDDD", person);
+        orderManager.addOrder(order);
+
+
+
+
+
+
+
         /*try {
             System.out.println("Здравствуйте! Выберите таблицу куда хотите добавить данные: ");
             Class.forName("org.postgresql.Driver");
