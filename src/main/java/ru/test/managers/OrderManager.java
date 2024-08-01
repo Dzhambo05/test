@@ -56,16 +56,14 @@ public class OrderManager {
         }
     }
 
-    public boolean updateOrderByAddress(String address) {
+    public boolean updateOrderByAddress(String address, int newPrice) {
         Order order;
-        try (Session session = sessionFactory.openSession();
-             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
+        try (Session session = sessionFactory.openSession()){
             Query query = session.createQuery("from Order where address = :address", Order.class);
             query.setParameter("address", address);
             order = (Order) query.getSingleResult();
             Transaction transaction = session.beginTransaction();
-            System.out.println("Ведите новую цену: ");
-            order.setTotalPrice(Integer.parseInt(reader.readLine()));
+            order.setTotalPrice(newPrice);
             session.merge(order);
             transaction.commit();
             return true;

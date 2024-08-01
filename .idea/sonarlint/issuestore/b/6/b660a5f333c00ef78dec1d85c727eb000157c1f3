@@ -1,29 +1,19 @@
 
 l
-java:S1104"OMake url a static final constant or non-public and provide accessors if needed.(âİÓÔ8Ï²ìÁ2
+java:S1104"OMake url a static final constant or non-public and provide accessors if needed.(âİÓÔ8ªÓ2
 t
-java:S1104"RMake dbName a static final constant or non-public and provide accessors if needed.(ÎêŒ•úÿÿÿÿ8Ï²ìÁ2
+java:S1104"RMake dbName a static final constant or non-public and provide accessors if needed.(ÎêŒ•úÿÿÿÿ8ªÓ2
 {
-java:S1104"YMake authorization a static final constant or non-public and provide accessors if needed.(’­Õ²üÿÿÿÿ8Ï²ìÁ2
+java:S1104"YMake authorization a static final constant or non-public and provide accessors if needed.(’­Õ²üÿÿÿÿ8ªÓ2
 F
-java:S1444")Make this "public static url" field final(âİÓÔ8Ï²ìÁ2
+java:S1444")Make this "public static url" field final(âİÓÔ8ªÓ2
 N
-java:S1444",Make this "public static dbName" field final(ÎêŒ•úÿÿÿÿ8Ï²ìÁ2
+java:S1444",Make this "public static dbName" field final(ÎêŒ•úÿÿÿÿ8ªÓ2
 U
-java:S1444"3Make this "public static authorization" field final(’­Õ²üÿÿÿÿ8Ï²ìÁ2
+java:S1444"3Make this "public static authorization" field final(’­Õ²üÿÿÿÿ8ªÓ2
 7
-java:S1220""Move this file to a named package.8Ğ²ìÁ2
+java:S1220""Move this file to a named package.8ªÓ2
 ?
-java:S2386"Make this member "protected".(’­Õ²üÿÿÿÿ8Õ²ìÁ2
-G	java:S106"+Replace this use of System.out by a logger.(Ÿ¼ş‘8ú„Â2
-X	java:S125"<This block of commented-out lines of code should be removed.(½‘Ñ³8á²ìÁ2
-R
-java:S1128"5Remove this unused import 'ru.test.entities.Courier'.(õÈÑ±8ı„Â2
-^
-java:S1128"<Remove this unused import 'ru.test.hibernate.HibernateUtil'.(ÿ†Øéÿÿÿÿÿ8ı„Â2
-T
-java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8ı„Â2
-^
-java:S1128"<Remove this unused import 'ru.test.managers.CourierManager'.(ôºªıÿÿÿÿ8ş„Â2
-M
-java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8ş„Â2
+java:S2386"Make this member "protected".(’­Õ²üÿÿÿÿ8¹Ó2
+L	java:S1060"+Replace this use of System.out by a logger.(¬„ß´ùÿÿÿÿ8ÙÀÁÓ2
+X	java:S1258"<This block of commented-out lines of code should be removed.(½‘Ñ³8ÉÓ2

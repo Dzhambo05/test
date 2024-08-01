@@ -7,7 +7,12 @@ import java.util.UUID;
 @Entity
 @Table(name = "dishes")
 public class Dish {
+    public Dish() {
+    }
 
+    public Dish(String name) {
+        this.name = name;
+    }
     @Id
     @GeneratedValue
     private UUID id;
@@ -21,6 +26,7 @@ public class Dish {
     private String compound;
     @Column(name = "weight")
     private float weight;
+
     @Column(name = "category")
     private String category;
 

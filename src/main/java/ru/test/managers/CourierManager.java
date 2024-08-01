@@ -56,16 +56,14 @@ public class CourierManager {
         }
     }
 
-    public boolean updateCourierByPhoneNumber(String phoneNumber) {
+    public boolean updateCourierByPhoneNumber(String phoneNumber, String newName) {
         Courier courier;
-        try (Session session = sessionFactory.openSession();
-             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            Query query = session.createQuery("from  Courier  where phoneNumber = :phone_number");
+        try (Session session = sessionFactory.openSession()) {
+            Query query = session.createQuery("from  Courier  where phoneNumber = :phone_number", Courier.class);
             query.setParameter("phone_number", phoneNumber);
             courier = (Courier) query.getSingleResult();
             Transaction transaction = session.beginTransaction();
-            System.out.println("Внесите новое имя: ");
-            courier.setName(reader.readLine());
+            courier.setName(newName);
             session.merge(courier);
             transaction.commit();
             return true;

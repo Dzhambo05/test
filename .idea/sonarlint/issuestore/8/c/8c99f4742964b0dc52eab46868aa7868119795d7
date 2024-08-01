@@ -1,25 +1,26 @@
 
 Q
-java:S3740+"/Provide the parametrized type for this generic.(¶¢Ë‘üÿÿÿÿ8ÅşåÁ2
+java:S3740."/Provide the parametrized type for this generic.(¶¢Ë‘üÿÿÿÿ8ÅşåÁ2
 Q
-java:S3740<"/Provide the parametrized type for this generic.(äéöÿÿÿÿÿ8ÆşåÁ2
+java:S3740?"/Provide the parametrized type for this generic.(äéöÿÿÿÿÿ8ÆşåÁ2
 Q
-java:S3740N"/Provide the parametrized type for this generic.(¶¢Ë‘üÿÿÿÿ8ÆşåÁ2
+java:S3740R"/Provide the parametrized type for this generic.(¶¢Ë‘üÿÿÿÿ8ÆşåÁ2
 t
-java:S1192,"RDefine a constant instead of duplicating this literal "telegram_nickname" 3 times.(ûÁİ€şÿÿÿÿ8ˆŸÂ2
+java:S1192/"RDefine a constant instead of duplicating this literal "telegram_nickname" 3 times.(ûÁİ€şÿÿÿÿ8ˆŸÂ2
 K
-java:S1121P".Extract the assignment out of this expression.(•Ô­ü8ÇşåÁ2
-L	java:S106$"+Replace this use of System.out by a logger.(…©ø‡şÿÿÿÿ8ëşåÁ2
+java:S1121T".Extract the assignment out of this expression.(•Ô­ü8ÇşåÁ2
+L	java:S106"+Replace this use of System.out by a logger.(ÎÙğÌúÿÿÿÿ8ëşåÁ2
+H
+java:S1168"+Return an empty collection instead of null.(¥¹ï8ŞéâÅ2
+L	java:S106'"+Replace this use of System.out by a logger.(…©ø‡şÿÿÿÿ8îşåÁ2
 U
-java:S1874+"3Remove this use of "createQuery"; it is deprecated.(¶¢Ë‘üÿÿÿÿ8ìşåÁ2
-F	java:S1063"+Replace this use of System.out by a logger.(®¥Š8îşåÁ2
+java:S1874."3Remove this use of "createQuery"; it is deprecated.(¶¢Ë‘üÿÿÿÿ8ìşåÁ2
+F	java:S1066"+Replace this use of System.out by a logger.(®¥Š8ñşåÁ2
 U
-java:S1874<"3Remove this use of "createQuery"; it is deprecated.(äéöÿÿÿÿÿ8ğşåÁ2
-G	java:S106@"+Replace this use of System.out by a logger.(Ü§û²8ñşåÁ2
-P
-java:S1874B".Remove this use of "update"; it is deprecated.(£ÔÇüÿÿÿÿ8œşçÁ2
-L	java:S106F"+Replace this use of System.out by a logger.(÷ƒ³®ÿÿÿÿÿ8»®çÁ2
+java:S1874?"3Remove this use of "createQuery"; it is deprecated.(äéöÿÿÿÿÿ8ğşåÁ2
+G	java:S106D"+Replace this use of System.out by a logger.(Ü§û²8»®çÁ2
+L	java:S106J"+Replace this use of System.out by a logger.(÷ƒ³®ÿÿÿÿÿ8÷âÅ2
 M
-java:S1481L"+Remove this unused "person" local variable.(èÎûıøÿÿÿÿ8òşåÁ2
+java:S1481P"+Remove this unused "person" local variable.(èÎûıøÿÿÿÿ8òşåÁ2
 U
-java:S1874N"3Remove this use of "createQuery"; it is deprecated.(¶¢Ë‘üÿÿÿÿ8óşåÁ2
+java:S1874R"3Remove this use of "createQuery"; it is deprecated.(¶¢Ë‘üÿÿÿÿ8óşåÁ2

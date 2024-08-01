@@ -1,27 +1,26 @@
 
 L
-java:S3740+"/Provide the parametrized type for this generic.(¤“à8í¢’¦2
+java:S3740."/Provide the parametrized type for this generic.(¤“à8«Ö»Ä2
 L
-java:S3740<"/Provide the parametrized type for this generic.(¤“à8í¢’¦2
-L
-java:S3740N"/Provide the parametrized type for this generic.(¤“à8Ì’¦2
+java:S3740?"/Provide the parametrized type for this generic.(¤“à8«Ö»Ä2
+Q
+java:S3740Q"/Provide the parametrized type for this generic.(óÛÂ¼øÿÿÿÿ8«Ö»Ä2
 
-java:S1192+"qDefine a constant instead of duplicating this literal "from  Courier  where phoneNumber = :phone_number" 3 times.(¤“à8í¢’¦2
+java:S1192."qDefine a constant instead of duplicating this literal "from  Courier  where phoneNumber = :phone_number" 3 times.(¤“à8¬Ö»Ä2
 j
-java:S1192,"MDefine a constant instead of duplicating this literal "phone_number" 3 times.(èšÁÃ8í¢’¦2
+java:S1192/"MDefine a constant instead of duplicating this literal "phone_number" 3 times.(èšÁÃ8¬Ö»Ä2
 P
-java:S1121P".Extract the assignment out of this expression.(îú×€úÿÿÿÿ8Ì’¦2
-L	java:S106#"+Replace this use of System.out by a logger.(áò¨úıÿÿÿÿ8ı¢’¦2
+java:S1121S".Extract the assignment out of this expression.(îú×€úÿÿÿÿ8¬Ö»Ä2
+G	java:S106"+Replace this use of System.out by a logger.(œà³À8ÇÖ»Ä2
+H
+java:S1168"+Return an empty collection instead of null.(¥¹ï8âİäÅ2
+L	java:S106&"+Replace this use of System.out by a logger.(áò¨úıÿÿÿÿ8ÉÖ»Ä2
 P
-java:S1874+"3Remove this use of "createQuery"; it is deprecated.(¤“à8ı¢’¦2
-L	java:S1063"+Replace this use of System.out by a logger.(ñ‹øÿÿÿÿ8ı¢’¦2
+java:S1874."3Remove this use of "createQuery"; it is deprecated.(¤“à8ÈÖ»Ä2
+L	java:S1066"+Replace this use of System.out by a logger.(ñ‹øÿÿÿÿ8ËÖ»Ä2
 P
-java:S1874<"3Remove this use of "createQuery"; it is deprecated.(¤“à8ı¢’¦2
-L	java:S106@"+Replace this use of System.out by a logger.(Ğôúÿÿÿÿ8ø²•¦2
-P
-java:S1874B".Remove this use of "update"; it is deprecated.(Æ³»Éşÿÿÿÿ8Œ£’¦2
-G	java:S106F"+Replace this use of System.out by a logger.(Ïä’Ø8ş§œ¦2
+java:S1874?"3Remove this use of "createQuery"; it is deprecated.(¤“à8ËÖ»Ä2
+L	java:S106C"+Replace this use of System.out by a logger.(Ğôúÿÿÿÿ8ÌÖ»Ä2
+G	java:S106I"+Replace this use of System.out by a logger.(Ïä’Ø8¿æãÅ2
 N
-java:S1481L",Remove this unused "courier" local variable.(…Æ¨ñüÿÿÿÿ8ø²•¦2
-P
-java:S1874N"3Remove this use of "createQuery"; it is deprecated.(¤“à8ø²•¦2
+java:S1481O",Remove this unused "courier" local variable.(…Æ¨ñüÿÿÿÿ8ÌÖ»Ä2
