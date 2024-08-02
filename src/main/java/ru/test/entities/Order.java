@@ -48,7 +48,7 @@ public class Order {
     public Order() {
     }
 
-    public Order(Status status, List<Dish> dishes, boolean isPaid, Form paymentForm, String address, Person person, int totalPrice) {
+    public Order(Status status, List<Dish> dishes, boolean isPaid, Form paymentForm, String address, Person person) {
         this.time = Timestamp.valueOf(LocalDateTime.now());
         this.status = status;
         this.dishes = dishes;
@@ -59,7 +59,6 @@ public class Order {
         for (Dish d : dishes) {
             totalPrice += d.getPrice();
         }
-        this.totalPrice = totalPrice;
     }
 
     public UUID getId() {

@@ -56,17 +56,39 @@ public class CourierManager {
         }
     }
 
-    public boolean updateCourierByPhoneNumber(String phoneNumber, String newName) {
+    public boolean updateCourierByPhoneNumber(String phoneNumber) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Courier courier;
         try (Session session = sessionFactory.openSession()) {
             Query query = session.createQuery("from  Courier  where phoneNumber = :phone_number", Courier.class);
             query.setParameter("phone_number", phoneNumber);
             courier = (Courier) query.getSingleResult();
             Transaction transaction = session.beginTransaction();
-            courier.setName(newName);
-            session.merge(courier);
-            transaction.commit();
-            return true;
+            System.out.println("Внесите новые данные. Внимание! Если вы оставите значение пустым, оно останется прежним\n - Новое имя: ");
+            String newName = reader.readLine();
+            System.out.println(" - Новый номер: ");
+            String newPhoneNumber = reader.readLine();
+            if (newName.equals("")) {
+                courier.setName(courier.getName());
+            } else {
+                courier.setName(newName);
+            }
+            if (newPhoneNumber.equals("")) {
+                courier.setPhoneNumber(courier.getPhoneNumber());
+            } else {
+                courier.setPhoneNumber(newPhoneNumber);
+            }
+            System.out.println("Новые значения: Имя - " + courier.getName() + ". Телефон - " + courier.getPhoneNumber());
+            System.out.println("1) - Сохранить2) - Отменить");
+            String saveOrNot = reader.readLine();
+            if (saveOrNot.equals("1")) {
+                session.merge(courier);
+                transaction.commit();
+                return true;
+            } else {
+                System.out.println("Вы отменили действие");
+                return false;
+            }
         } catch (Exception e) {
             System.out.println("Update courier failed");
             return false;
