@@ -57,15 +57,55 @@ public class DishManager {
     }
 
     public boolean updateDishByName(String name) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Dish dish;
-        try (Session session = sessionFactory.openSession();
-             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
+        try (Session session = sessionFactory.openSession()){
             Query query = session.createQuery("from Dish where name = :name", Dish.class);
             query.setParameter("name", name);
             dish = (Dish) query.getSingleResult();
             Transaction transaction = session.beginTransaction();
-            System.out.println("Введите новую цену: ");
-            dish.setPrice(Integer.parseInt(reader.readLine()));
+            System.out.println("Внесите новые данные. Внимание! Если вы оставите значение пустым, оно останется прежним\n - Новое название: ");
+            String newName = reader.readLine();
+            System.out.println(" - Новая цена: ");
+            String newPrice = reader.readLine();
+            System.out.println(" - Новый вес: ");
+            String newWeight = reader.readLine();
+            System.out.println(" - Новую категорию: ");
+            String newCategory = reader.readLine();
+            System.out.println(" - Новый состав: ");
+            String newCompound = reader.readLine();
+            System.out.println(" - Новое описание: ");
+            String newDescription = reader.readLine();
+            if (newName.equals("")) {
+                dish.setName(dish.getName());
+            } else {
+                dish.setName(newName);
+            }
+            if (newPrice.equals("")) {
+                dish.setPrice(dish.getPrice());
+            } else {
+                dish.setPrice(Integer.parseInt(newPrice));
+            }
+            if (newWeight.equals("")) {
+                dish.setWeight(dish.getWeight());
+            } else {
+                dish.setWeight(Float.parseFloat(newWeight));
+            }
+            if (newCategory.equals("")) {
+                dish.setCategory(dish.getCategory());
+            } else {
+                dish.setCategory(newCategory);
+            }
+            if (newCompound.equals("")) {
+                dish.setCompound(dish.getCompound());
+            } else {
+                dish.setCompound(newCompound);
+            }
+            if (newDescription.equals("")) {
+                dish.setDescription(dish.getDescription());
+            } else {
+                dish.setDescription(newDescription);
+            }
             session.merge(dish);
             transaction.commit();
             return true;

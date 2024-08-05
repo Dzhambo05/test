@@ -1,5 +1,6 @@
 import ru.test.entities.*;
 import ru.test.managers.CourierManager;
+import ru.test.managers.DishManager;
 import ru.test.managers.OrderManager;
 import ru.test.managers.PersonManager;
 
@@ -21,8 +22,14 @@ public class Test {
     public static void main(String[] args) throws IOException {
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
             while (true) {
-                System.out.println("Выберите таблицу:\n" +
-                        "1) - Курьеры \n2) - Заказы \n3) - Люди \n4) - Блюда \n0) - Закрыть программу");
+                System.out.println(
+                        "Выберите таблицу:\n" +
+                        "1) - Курьеры \n" +
+                        "2) - Люди \n" +
+                        "3) - Блюда \n" +
+                        "4) - Заказы \n" +
+                        "0) - Закрыть программу"
+                );
                 String action = reader.readLine();
                 if (action.equals("0")) {
                     break;
@@ -63,7 +70,7 @@ public class Test {
                             }
                             if (actionInCourier.equals("2")) {
                                 courierManager.deleteCourierByPhoneNumber(courier.getPhoneNumber());
-                                break;
+                                continue;
                             }
                             if (actionInCourier.equals("1")) {
                                 courierManager.updateCourierByPhoneNumber(courier.getPhoneNumber());
@@ -71,6 +78,165 @@ public class Test {
                             }
                             break;
                         }
+                    }
+                }
+                if (action.equals("2")) {
+                    while (true) {
+                        PersonManager personManager = new PersonManager();
+                        personManager.init();
+                        Person person;
+                        List<Person> persons = personManager.getAllPersons();
+                        int personNumber = 0;
+                        for (int i = 1; i <= persons.size(); i++) {
+                            System.out.println(i + ") - Никнэйм: " + persons.get(i - 1).getTelegramNickname());
+                        }
+                        System.out.println("0) - Выход");
+                        System.out.println("Веберите пользователя: ");
+                        personNumber = Integer.parseInt(reader.readLine());
+                        if (personNumber == 0) {
+                            break;
+                        } else if (personNumber > persons.size()) {
+                            System.out.println("Такого пользователя не существует. Введите снова:");
+                            continue;
+                        } else {
+                            person = persons.get(personNumber - 1);
+                            System.out.println("Имя: " + person.getTelegramNickname());
+                            System.out.println("Выберите действие: 1) - Изменить 2) - Удалить 0) - Назад");
+                            String actionInPerson = reader.readLine();
+                            if (actionInPerson.equals("0")) {
+                                continue;
+                            }
+                            if (!actionInPerson.matches("[1,2,0]")) {
+                                System.out.println("Вы ввели неверное число. Попробуйте снова");
+                                continue;
+                            }
+                            if (actionInPerson.equals("2")) {
+                                personManager.deletePersonByNickname(person.getTelegramNickname());
+                                continue;
+                            }
+                            if (actionInPerson.equals("1")) {
+                                personManager.updatePersonByNickname(person.getTelegramNickname());
+                                continue;
+                            }
+                        }
+                        break;
+                    }
+                }
+                if (action.equals("3")) {
+                    while (true) {
+                        DishManager dishManager = new DishManager();
+                        dishManager.init();
+                        Dish dish;
+                        List<Dish> dishes = dishManager.getAllDishes();
+                        int dishNumber;
+                        for (int i = 1; i <= dishes.size(); i++) {
+                            System.out.println(i + ") - Название: " + dishes.get(i - 1).getName() + ". Цена: " + dishes.get(i - 1).getPrice() + ". Вес: " + dishes.get(i - 1).getWeight() + ". Категория: " + dishes.get(i - 1).getCategory() + ". Состав: " + dishes.get(i - 1).getCompound() + ". Описание: " + dishes.get(i - 1).getDescription());
+                        }
+                        System.out.println("0) - Выход");
+                        System.out.println("Выберите блюдо: ");
+                        dishNumber = Integer.parseInt(reader.readLine());
+                        if (dishNumber == 0) {
+                            break;
+                        } else if (dishNumber > dishes.size()) {
+                            System.out.println("Такого блюда не существует. Введите снова: ");
+                            continue;
+                        } else {
+                            dish = dishes.get(dishNumber - 1);
+                            System.out.println("Название: " + dish.getName() + ". Цена: " + dish.getPrice() + ". Вес:" + dish.getCategory() + ". Категория: " + dish.getCategory() + ". Состав:" + dish.getCompound() + ". Описание: " + dish.getDescription());
+                            System.out.println("Выберите действие: 1) - Изменить 2) - Удалить 0) - Назад");
+                            String actionIdDish = reader.readLine();
+                            if (actionIdDish.equals("0")) {
+                                continue;
+                            }
+                            if (!actionIdDish.matches("[1,2,0]")) {
+                                System.out.println("Вы ввели неверное число. Попробуйте снова");
+                                continue;
+                            }
+                            if (actionIdDish.equals("2")) {
+                                dishManager.deleteDishByName(dish.getName());
+                                continue;
+                            }
+                            if (actionIdDish.equals("1")) {
+                                dishManager.updateDishByName(dish.getName());
+                                continue;
+                            }
+                        }
+                        break;
+                    }
+                }
+                if (action.equals("4")) {
+                    while (true) {
+                        OrderManager orderManager = new OrderManager();
+                        orderManager.init();
+                        System.out.println("Выберите действие:\n1) Сделать заказ\n2) Отменить заказ\n3) Посмотреть заказ\n0) Вернуться назад");
+                        String acrionInOrder = reader.readLine();
+                        if (acrionInOrder.equals("1")) {
+                            DishManager dishManager = new DishManager();
+                            dishManager.init();
+                            List<Dish> dishes = dishManager.getAllDishes();
+                            List<Dish> orderDishes = new ArrayList<>();
+                            System.out.println("Выберите блюда: ");
+                            System.out.println("0) - Закончить");
+                            for (int i = 1; i <= dishes.size(); i++) {
+                                System.out.println(i + ") Название блюда: " + dishes.get(i - 1).getName() + ". Цена блюда: " + dishes.get(i - 1).getPrice());
+                            }
+                            while (true) {
+                                String number = reader.readLine();
+                                int dishNumber = Integer.parseInt(number);
+                                if (dishNumber > dishes.size() || number.equals("")) {
+                                    System.out.println("Такого блюда нет. Попробуйте снова");
+                                    continue;
+                                } else if (dishNumber == 0) {
+                                    break;
+                                } else {
+                                    orderDishes.add(dishes.get(dishNumber - 1));
+                                    System.out.println("Вы выбрали " + dishes.get(dishNumber - 1).getName());
+                                    continue;
+                                }
+                            }
+                            System.out.println("Вы выбрали: ");
+                            int totalPrice = 0;
+                            for (Dish d : orderDishes) {
+                                System.out.println(d.getName() + " " + d.getPrice());
+                                totalPrice += d.getPrice();
+                            }
+                            System.out.println("Общая сумма: " + totalPrice);
+                            System.out.println("Введите адрес: ");
+                            String address = reader.readLine();
+                            System.out.println("Форма оплаты:\n1)Карта\n2)Наличные\n3)Перевод");
+                            Form form = null;
+                            String paymentForm = reader.readLine();
+                            switch (paymentForm) {
+                                case "1":
+                                    form = Form.CART;
+                                    break;
+                                case "2":
+                                    form = Form.CASH;
+                                    break;
+                                case "3":
+                                    form = Form.TRANSFER;
+                                    break;
+                            }
+                            Status status = Status.INPROCESS;
+                            System.out.println("Кто делает заказ? Введите имя: ");
+                            String name = reader.readLine();
+                            Person person = new Person(name);
+                            PersonManager personManager = new PersonManager();
+                            personManager.init();
+                            personManager.addPerson(person);
+                            Order order = new Order(status, orderDishes, false, form, address, person);
+                            orderManager.addOrder(order);
+                        }
+                        if (acrionInOrder.equals("2")) {
+                            System.out.println("Введте адрес заказа: ");
+                            orderManager.deleteOrderByAddress(reader.readLine());
+                        }
+                        if (acrionInOrder.equals("3")) {
+                            System.out.println("Введите адрес заказа: ");
+                            Order order = orderManager.getOrderByAddress(reader.readLine());
+                            System.out.println("Стоимость: " + order.getTotalPrice() + " Время заказа: " + order.getTime() + " Форма оплаты: " + order.getPaymentForm() + " Статус: " + order.getStatus());
+                        }
+                        break;
                     }
                 }
             }

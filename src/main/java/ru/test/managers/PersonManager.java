@@ -43,7 +43,7 @@ public class PersonManager {
     public boolean deletePersonByNickname(String nickname) {
         Person person;
         try (Session session = sessionFactory.openSession()){
-            Query query = session.createQuery("from Person p where telegramNickname = :telegram_nickname");
+            Query query = session.createQuery("from Person p where telegramNickname = :telegram_nickname", Person.class);
             query.setParameter("telegram_nickname", nickname);
             person = (Person) query.getSingleResult();
             Transaction transaction = session.beginTransaction();
@@ -57,19 +57,31 @@ public class PersonManager {
     }
 
     public boolean updatePersonByNickname(String nickname) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Person person;
-        try (Session session = sessionFactory.openSession();
-             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))){
-            Query query = session.createQuery("from Person where telegramNickname = :telegram_nickname");
+        try (Session session = sessionFactory.openSession()){
+            Query query = session.createQuery("from Person where telegramNickname = :telegram_nickname", Person.class);
             query.setParameter("telegram_nickname", nickname);
-
             person = (Person) query.getSingleResult();
             Transaction transaction = session.beginTransaction();
-            System.out.println("Введите новый никнэйм: ");
-            person.setTelegramNickname(reader.readLine());
-            session.merge(person);
-            transaction.commit();
-            return true;
+            System.out.println("Внесите новые данные. Внимание! Если вы оставите значение пустым, оно останется прежним\n - Новое имя: ");
+            String newTelegramNickname = reader.readLine();
+            if (newTelegramNickname.equals("")) {
+                person.setTelegramNickname(person.getTelegramNickname());
+            } else {
+                person.setTelegramNickname(newTelegramNickname);
+            }
+            System.out.println("Новoе значениe: Имя - " + person.getTelegramNickname());
+            System.out.println("1) - Сохранить2) - Отменить");
+            String saveOrNot = reader.readLine();
+            if (saveOrNot.equals("1")) {
+                session.merge(person);
+                transaction.commit();
+                return true;
+            } else {
+                System.out.println("Вы отменили действие");
+                return false;
+            }
         }catch (Exception e) {
             System.out.println("Update person failed");
             return false;
@@ -79,7 +91,7 @@ public class PersonManager {
     public Person getPersonByNickname(String nickname) {
         Person person;
         try (Session session = sessionFactory.openSession()) {
-            Query query = session.createQuery("from Person p where telegramNickname = :telegram_nickname");
+            Query query = session.createQuery("from Person p where telegramNickname = :telegram_nickname", Person.class);
             query.setParameter("telegram_nickname", nickname);
             return person = (Person) query.getSingleResult();
         }

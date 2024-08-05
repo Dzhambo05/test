@@ -1,54 +1,88 @@
 
-‰
-java:S1192*"lDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ½Ğ¾Ğ¼ĞµÑ€ Ñ‚ĞµĞ»ĞµÑ„Ğ¾Ğ½Ğ°:" 3 times.(ÇùóÅ8—ÛØô2
-†
-java:S1192v"iDefine a constant instead of duplicating this literal "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ°Ğ´Ñ€ĞµÑ Ğ·Ğ°ĞºĞ°Ğ·Ğ°: " 3 times.(øˆùÑ8—ÛØô2
-z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8—ÛØô2
+m
+java:S11923"PDefine a constant instead of duplicating this literal "0) - Ğ’Ñ‹Ñ…Ğ¾Ğ´" 3 times.(„‹‹8æ‘à ‘2
+°
+java:S1192D"Define a constant instead of duplicating this literal "Ğ’Ñ‹ Ğ²Ğ²ĞµĞ»Ğ¸ Ğ½ĞµĞ²ĞµÑ€Ğ½Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾. ĞŸĞ¾Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ ÑĞ½Ğ¾Ğ²Ğ°" 3 times.(Ûó‚Ÿøÿÿÿÿ8æ‘à ‘2
+»
+java:S1192>"Define a constant instead of duplicating this literal "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ´ĞµĞ¹ÑÑ‚Ğ²Ğ¸Ğµ: 1) - Ğ˜Ğ·Ğ¼ĞµĞ½Ğ¸Ñ‚ÑŒ 2) - Ğ£Ğ´Ğ°Ğ»Ğ¸Ñ‚ÑŒ 0) - ĞĞ°Ğ·Ğ°Ğ´" 3 times.(Û‰Õ‘8æ‘à ‘2
+e
+java:S1192C"HDefine a constant instead of duplicating this literal "[1,2,0]" 3 times.(¿’Ÿ8æ‘à ‘2
+z	java:S135*"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8æ‘à ‘2
+z	java:S135T"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8æ‘à ‘2
+z	java:S135~"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8æ‘à ‘2
+{	java:S135·"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8æ‘à ‘2
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8æ‘à ‘2
 l
-java:S1104"OMake url a static final constant or non-public and provide accessors if needed.(âİÓÔ8—ÛØô2
+java:S1104"OMake url a static final constant or non-public and provide accessors if needed.(âİÓÔ8æ‘à ‘2
 t
-java:S1104"RMake dbName a static final constant or non-public and provide accessors if needed.(ÎêŒ•úÿÿÿÿ8—ÛØô2
+java:S1104"RMake dbName a static final constant or non-public and provide accessors if needed.(ÎêŒ•úÿÿÿÿ8æ‘à ‘2
 {
-java:S1104"YMake authorization a static final constant or non-public and provide accessors if needed.(’­Õ²üÿÿÿÿ8—ÛØô2
+java:S1104"YMake authorization a static final constant or non-public and provide accessors if needed.(’­Õ²üÿÿÿÿ8æ‘à ‘2
 F
-java:S1444")Make this "public static url" field final(âİÓÔ8—ÛØô2
+java:S1444")Make this "public static url" field final(âİÓÔ8æ‘à ‘2
 N
-java:S1444",Make this "public static dbName" field final(ÎêŒ•úÿÿÿÿ8—ÛØô2
+java:S1444",Make this "public static dbName" field final(ÎêŒ•úÿÿÿÿ8æ‘à ‘2
 U
-java:S1444"3Make this "public static authorization" field final(’­Õ²üÿÿÿÿ8—ÛØô2
+java:S1444"3Make this "public static authorization" field final(’­Õ²üÿÿÿÿ8æ‘à ‘2
 7
-java:S1220""Move this file to a named package.8—ÛØô2
+java:S1220""Move this file to a named package.8æ‘à ‘2
 ?
-java:S2386"Make this member "protected".(’­Õ²üÿÿÿÿ8ÃÜØô2
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(œû¿Ø8ÒÜØô2
+java:S2386"Make this member "protected".(’­Õ²üÿÿÿÿ8’“à ‘2
+p
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 156 to the 15 allowed.(œû¿Ø8’“à ‘2
 8
-java:S3626 "Remove this redundant jump.(ÉŠ©ƒ8ÒÜØô2
-L	java:S106"+Replace this use of System.out by a logger.(îÌúıÿÿÿÿ8ÒÜØô2
-L	java:S106"+Replace this use of System.out by a logger.(ƒ¶ã—úÿÿÿÿ8ÒÜØô2
-L	java:S106$"+Replace this use of System.out by a logger.(õÍ¥œüÿÿÿÿ8ÒÜØô2
-C	java:S131&""Add a default case to this switch.(ûÑ¼ûÿÿÿÿ8ÒÜØô2
-L	java:S106("+Replace this use of System.out by a logger.(ÆÀ¬ˆûÿÿÿÿ8ÒÜØô2
-G	java:S106*"+Replace this use of System.out by a logger.(ÇùóÅ8ÒÜØô2
-G	java:S1060"+Replace this use of System.out by a logger.(ÇùóÅ8ÒÜØô2
-G	java:S1064"+Replace this use of System.out by a logger.(ÇùóÅ8ÒÜØô2
-G	java:S1066"+Replace this use of System.out by a logger.(î˜ğÈ8ÒÜØô2
-G	java:S106;"+Replace this use of System.out by a logger.(ÇùóÅ8ÒÜØô2
-F	java:S106="+Replace this use of System.out by a logger.(è„ÏT8ÒÜØô2
-L	java:S106C"+Replace this use of System.out by a logger.(õÍ¥œüÿÿÿÿ8ÒÜØô2
-C	java:S131E""Add a default case to this switch.(Æ¼¸‰ùÿÿÿÿ8ÒÜØô2
-L	java:S106H"+Replace this use of System.out by a logger.(İîƒÑşÿÿÿÿ8ÒÜØô2
-L	java:S106T"+Replace this use of System.out by a logger.(¡²×¼ûÿÿÿÿ8ÒÜØô2
-G	java:S106Z"+Replace this use of System.out by a logger.(ÀĞç˜8ÒÜØô2
-L	java:S106_"+Replace this use of System.out by a logger.(»Ş¥õøÿÿÿÿ8ÒÜØô2
-G	java:S106h"+Replace this use of System.out by a logger.(›–­í8ÒÜØô2
-F	java:S106j"+Replace this use of System.out by a logger.(‰µ€8ÒÜØô2
-G	java:S106p"+Replace this use of System.out by a logger.(¡Ãóó8ÒÜØô2
-G	java:S106v"+Replace this use of System.out by a logger.(øˆùÑ8ÒÜØô2
-G	java:S106z"+Replace this use of System.out by a logger.(øˆùÑ8ÒÜØô2
-L	java:S106|"+Replace this use of System.out by a logger.(œ½Ø¥ûÿÿÿÿ8âÜØô2
-H	java:S106€"+Replace this use of System.out by a logger.(øˆùÑ8âÜØô2
-H	java:S106‚"+Replace this use of System.out by a logger.(Õ—Ä—8âÜØô2
-Y	java:S125Œ"<This block of commented-out lines of code should be removed.(½‘Ñ³8âÜØô2
+java:S3626:"Remove this redundant jump.(ÉŠ©ƒ8’“à ‘2
+9
+java:S3626¼"Remove this redundant jump.(ÉŠ©ƒ8’“à ‘2
+9
+java:S3626Â"Remove this redundant jump.(ÉŠ©ƒ8’“à ‘2
+G	java:S106"+Replace this use of System.out by a logger.(ÆÀûı8’“à ‘2
+T
+java:S6126"2Replace this String concatenation with Text block.(ìÅ¸úÿÿÿÿ8’“à ‘2
+G	java:S106&"+Replace this use of System.out by a logger.(®şãÒ8’“à ‘2
+G	java:S1061"+Replace this use of System.out by a logger.(™»¸8’“à ‘2
+G	java:S1063"+Replace this use of System.out by a logger.(„‹‹8’“à ‘2
+L	java:S1064"+Replace this use of System.out by a logger.(»Íˆ•úÿÿÿÿ8’“à ‘2
+L	java:S1069"+Replace this use of System.out by a logger.(•µç‡úÿÿÿÿ8’“à ‘2
+L	java:S106="+Replace this use of System.out by a logger.(€éÂáûÿÿÿÿ8’“à ‘2
+G	java:S106>"+Replace this use of System.out by a logger.(Û‰Õ‘8’“à ‘2
+G
+java:S5869C"*Remove duplicates in this character class.(¿’Ÿ8’“à ‘2
+L	java:S106D"+Replace this use of System.out by a logger.(Ûó‚Ÿøÿÿÿÿ8¡“à ‘2
+G	java:S106["+Replace this use of System.out by a logger.(Ğß©“8¡“à ‘2
+G	java:S106]"+Replace this use of System.out by a logger.(„‹‹8¡“à ‘2
+G	java:S106^"+Replace this use of System.out by a logger.(ù¥êì8¡“à ‘2
+G	java:S106c"+Replace this use of System.out by a logger.(Öñ½ú8¡“à ‘2
+L	java:S106g"+Replace this use of System.out by a logger.(Ò¦ö–ÿÿÿÿÿ8¡“à ‘2
+G	java:S106h"+Replace this use of System.out by a logger.(Û‰Õ‘8¡“à ‘2
+G
+java:S5869m"*Remove duplicates in this character class.(´Ô¬8¡“à ‘2
+L	java:S106n"+Replace this use of System.out by a logger.(Ûó‚Ÿøÿÿÿÿ8¡“à ‘2
+M	java:S106…"+Replace this use of System.out by a logger.(±²š®úÿÿÿÿ8¡“à ‘2
+H	java:S106‡"+Replace this use of System.out by a logger.(„‹‹8¡“à ‘2
+M	java:S106ˆ"+Replace this use of System.out by a logger.(‹¨¾ıÿÿÿÿ8¡“à ‘2
+M	java:S106"+Replace this use of System.out by a logger.(ğèÔäÿÿÿÿÿ8¡“à ‘2
+M	java:S106‘"+Replace this use of System.out by a logger.(óğö—ùÿÿÿÿ8¡“à ‘2
+H	java:S106’"+Replace this use of System.out by a logger.(Û‰Õ‘8¡“à ‘2
+M
+java:S5869—"*Remove duplicates in this character class.(ÍÒè€úÿÿÿÿ8¡“à ‘2
+M	java:S106˜"+Replace this use of System.out by a logger.(Ûó‚Ÿøÿÿÿÿ8¡“à ‘2
+M	java:S106«"+Replace this use of System.out by a logger.(¼œ¾Æıÿÿÿÿ8¡“à ‘2
+H	java:S106²"+Replace this use of System.out by a logger.(°¯é8¡“à ‘2
+H	java:S106³"+Replace this use of System.out by a logger.(…³ô©8¡“à ‘2
+M	java:S106µ"+Replace this use of System.out by a logger.(ÍüÚÿÿÿÿÿ8¡“à ‘2
+G	java:S106»"+Replace this use of System.out by a logger.(–Ê“.8¡“à ‘2
+M	java:S106Á"+Replace this use of System.out by a logger.(ëŸÊòúÿÿÿÿ8¡“à ‘2
+M	java:S106Å"+Replace this use of System.out by a logger.(€¼ñªÿÿÿÿÿ8¡“à ‘2
+M	java:S106È"+Replace this use of System.out by a logger.(›‰÷İüÿÿÿÿ8¡“à ‘2
+M	java:S106Ë"+Replace this use of System.out by a logger.(àÓÏ‚úÿÿÿÿ8¡“à ‘2
+H	java:S106Ì"+Replace this use of System.out by a logger.(á³óÊ8¡“à ‘2
+M	java:S106Î"+Replace this use of System.out by a logger.(¯Ä˜‰şÿÿÿÿ8¡“à ‘2
+?	java:S131Ñ""Add a default case to this switch.(³¬ëÏ8¡“à ‘2
+M	java:S106İ"+Replace this use of System.out by a logger.(®‹¦ùÿÿÿÿ8¡“à ‘2
+M	java:S106ç"+Replace this use of System.out by a logger.(™½õšıÿÿÿÿ8¡“à ‘2
+H	java:S106ë"+Replace this use of System.out by a logger.(øˆùÑ8¡“à ‘2
+H	java:S106í"+Replace this use of System.out by a logger.(˜è·•8¡“à ‘2
+Y	java:S125ù"<This block of commented-out lines of code should be removed.(½‘Ñ³8¡“à ‘2
 ä
-java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 115 to 64, Complexity from 21 to 14, Nesting Level from 5 to 2, Number of Variables from 28 to 6.(œû¿Ø8âÜØô2
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 223 to 64, Complexity from 45 to 14, Nesting Level from 7 to 2, Number of Variables from 40 to 6.(œû¿Ø8¡“à ‘2
